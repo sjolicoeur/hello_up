@@ -22,3 +22,12 @@ Flask-Foundation is licensed under the BSD license. For more info see LICENSE.md
 # Want to learn more about Flask?
 
 I also wrote a book on Flask! You can order it [here](https://www.packtpub.com/web-development/mastering-flask).
+
+
+# ToDo
+
+- endpoints:
+    - [x] streaming
+    - [ ] websockets 
+    - [x] uname 
+    - [x] show env vars

@@ -1,0 +1,10 @@
+{%extends "base.html"%}
+
+
+{%block body%}
+<ul>
+{% for key in env %}
+    <li><b>{{ key }}</b>: {{ env[key] }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

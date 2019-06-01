@@ -73,3 +73,9 @@ def watch_logs(log_file_path):
 def logs():
     global log_file_path
     return Response(watch_logs(log_file_path))  # , mimetype='text/csv')
+
+
+@main.route('/env')
+def env():
+    env = os.environ
+    return render_template("envs.html", env=env)
