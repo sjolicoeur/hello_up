@@ -24,7 +24,7 @@ clean:
 	python manage.py clean
 
 lint:
-	flake8 --exclude=env .
+	flake8 --exclude=venv .
 
 test:
 	py.test tests
