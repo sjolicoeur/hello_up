@@ -1,6 +1,8 @@
-import os, time
+import os
+import time
 
-from flask import Blueprint, render_template, flash, request, redirect, url_for, Response
+from flask import Blueprint, render_template, flash, request, redirect, \
+    url_for, Response
 from flask.ext.login import login_user, logout_user, login_required
 
 from hello_up.extensions import cache
@@ -50,11 +52,11 @@ log_file_path = "/var/log/system.log"
 
 
 def follow(thefile):
-    thefile.seek(0, os.SEEK_END) # End-of-file
+    thefile.seek(0, os.SEEK_END)  # End-of-file
     while True:
         line = thefile.readline()
         if not line:
-            time.sleep(0.1) # Sleep briefly
+            time.sleep(0.1)  # Sleep briefly
             continue
         yield line
 
