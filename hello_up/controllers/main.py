@@ -48,7 +48,7 @@ def logout():
 def restricted():
     return "You can only see this if you are logged in!", 200
 
-log_file_path = "/var/log/system.log"
+log_file_path = "/var/log/app.stdout.log"  # "/var/log/system.log"
 
 
 def follow(thefile):
